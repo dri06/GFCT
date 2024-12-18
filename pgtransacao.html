@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=width=device-width, initial-scale="1.0">
+    <title>Gestão Financeira do Caixa da Turma</title>
+    <link rel="stylesheet" href="stylescad.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>GESTÃO FINANCEIRA DO CAIXA DA TURMA</h1>
+        <form id="cadastroForm" action="pgtransacao.php" class="form-group">
+
+            <label for="transacao">DESCRIÇÃO DA TRANSAÇÃO:</label>
+            <input type="text" id="transacao" name="transacao" required>
+
+            <label for="data_nascimento">DATA DE TRANSAÇÃO:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            <label for="valor">VALOR:</label>
+            <input type="text" id="valor" name="valor" required>
+            <form class="form-group">
+
+                <label for="tipo">TIPO DO RECURSO:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="escolher">Escolher</option>
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                </select>
+
+                <label for="categoria">ORIGEM DO RECURSO:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="escolher">Escolher</option>
+                    <option value="doacoes">Doações</option>
+                    <option value="eventos">Eventos</option>
+                    <option value="rifas">Rifas</option>
+                    <option value="mensalidade">Mensalidade</option>
+                </select>
+
+                <label for="transacao">RESPONSÁVEL DA TRANSAÇÃO:</label>
+                <input type="text" id="transacao" name="transacao" required>
+
+                <label for="comprovante">COMPROVANTE DA TRANSAÇÃO:</label>
+                <input type="file" id="comprovante" name="comprovante" accept="image/*" required>
+
+                <button type="submit" class="btn">ENVIAR</button>
+            </form>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
